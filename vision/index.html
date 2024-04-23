@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="styles/fonts.css">
+  <link rel="stylesheet" type="text/css" href="styles/global.css">
+  <link rel="stylesheet" type="text/css" href="styles/base.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Fresha</title>
+</head>
+<body>
+  <!-- Hero banner -->
+  <section class="hero-container">
+    <div class="remove-assignment-content">
+        <div class="hero-text">
+          <h1>Company Vision</h1>
+          <h3>Join us on a journey of taste and nutrition as we redefine what it means to enjoy truly fresh food.</h3>
+          <button class="sub-button">Company Value</button>
+          <button class="sub-button">Company Vision</button>
+        </div>
+      </div>
+  </section>
+
+  <!-- content -->
+  <section class="container content-container">
+    <div class="content-box">
+      <div class="content-text">
+      <h2>ABOUT US</h2>
+      <p>Welcome to Fresha, where nature meets freshness in every bite! As a leading food company, Fresha is dedicated to bringing you the finest natural and organic ingredients straight from the farm to your table. Our commitment to quality ensures that every product we offer is bursting with freshness and goodness.</p>
+      <button class="sub-button">Learn More</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Card -->
+  <section class="container card-section">
+      <ul class="card-container">
+        <li class="card">
+          <img src="assets/1.jpg" alt="Wheat field with blue sky and sunshine.">
+          <div class="card-content">
+            <h3 class="subheader">
+              Order Your Meal
+            </h3>
+          </div>
+        </li>
+        <li class="card">
+          <img src="assets/2.jpg" alt="Close up shot of green leaves with water splash.">
+          <div class="card-content">
+            <h3 class="subheader">
+              Delivery Range
+            </h3>
+          </div>
+        </li>
+        <li class="card">
+          <img src="assets/3.jpg" alt="A hand holding young leaves.">
+          <div class="card-content">
+            <h3 class="subheader">
+              Products
+            </h3>
+          </div>
+        </li>
+      </ul>
+  </section>
+
+  <!-- Embeded Video -->
+  <section class="container video">
+      <iframe class="youtube" 
+      src="https://www.youtube.com/embed/fkO3EhG7v3c?si=_AeT18rglQnikqHC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+      </iframe>
+  </section>
+
+  <!-- accordion -->
+  <section class="container accordion-container">
+    <div class="accordion-box">
+      <i class="fas fa-question"></i>
+      <h2>Frequently Asked Questions</h2>
+      <button class="accordion">Are Fresha products organic?</button>
+        <div class="panel">
+          <p>Yes, at Fresha, we take pride in offering a wide range of organic products. We work closely with farmers who follow organic farming practices to ensure that our ingredients are free from synthetic pesticides, herbicides, and genetically modified organisms (GMOs).</p>
+        </div>
+
+      <button class="accordion">What measures does Fresha take to ensure freshness?</button>
+        <div class="panel">
+          <p>Maintaining freshness is our top priority at Fresha. From the moment our ingredients are harvested to the time they reach your plate, we implement strict quality control measures. Our state-of-the-art facilities are equipped with cutting-edge technology to preserve freshness, and our logistics team works tirelessly to ensure timely delivery to stores and customers.</p>
+        </div>
+
+        <button class="accordion">Is Fresha committed to sustainability?</button>
+        <div class="panel">
+          <p>Absolutely! Sustainability is at the core of everything we do at Fresha. We recognize the importance of preserving our planet for future generations, which is why we're dedicated to sustainable farming practices, reducing food waste, and minimizing our environmental footprint.</p>
+        </div>
+    </div>
+
+      <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.maxHeight) {
+            panel.style.maxHeight = null;
+          } else {
+            panel.style.maxHeight = panel.scrollHeight + "px";
+          } 
+        });
+      }
+      </script>
+
+  </section>
+
+  <!-- footer -->
+  <section class="footer-container">
+    <div class="footer-content">
+      <div class="col1">
+      <h3>Contact Info</h3>
+      <ul>
+        <li><a href="#">fresha@example.com</a></li>
+        <li>(403) 123 4567</li>
+        <li>Fake address SE Calgary, AB, Canada</li>
+        <div class="sns">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        </div>
+      </ul>
+      </div>
+      <div class="col2">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="#">Terms of Use</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Accessibility</a></li>
+      </ul>
+      </div>
+
+      <div class="col3">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20065.808264871608!2d-114.06806749999998!3d51.04891405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716ffb86200597%3A0x10c42af1e7df241e!2sDowntown%2C%20Calgary%2C%20AB!5e0!3m2!1sen!2sca!4v1711077083735!5m2!1sen!2sca" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </div>
+    <div class="year">
+      Copyright
+      &copy;
+      <span id="copyright">
+          <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+      </span>
+      Fresha
+    </div>
+  </section>
+</body>
+</html>
