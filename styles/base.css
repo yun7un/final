@@ -12,7 +12,7 @@
 .hero-container {
   display: flex;
   flex-wrap: wrap;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(../assets/blooming.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../assets/leaves.avif);
   background-color: #403d58;
   background-repeat: no-repeat;
   background-size: cover;
@@ -21,8 +21,7 @@
 }
 
 .hero-text{
-  font-family: "Dancing Script", Arial, Helvetica, sans-serif;
-  font-style: italic;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-size: 2em;
   color: rgb(255, 252, 240);
 }
@@ -42,9 +41,9 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(255, 255, 255)), url(../assets/lily.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(255, 255, 255)), url(../assets/info.jpg);
   background-repeat: no-repeat;
-  background-size: 170%;
+  background-size: 100%;
   background-position: 20%;
   background-color: rgb(255, 252, 240);
   height: 70vh;
@@ -90,11 +89,6 @@
 	transition: .5s ease-in-out;
 }
 
-.card:hover {	
-	-webkit-filter: blur(3px);
-	filter: blur(3px);
-}
-
 .card-content {
   display: hidden;
 }
@@ -122,7 +116,7 @@ img {
 
 /** accordian **/
 .accordion-container {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(../assets/blooming.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url(../assets/info.jpg);
   background-size: cover;
   background-color: rgb(255, 252, 240);
   color: #fff;
@@ -141,7 +135,7 @@ img {
 
 /* buttons used to open and close the accordion panel */
 .accordion {
-  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
   background-color: rgb(255, 252, 240);
   color: #444;
   cursor: pointer;
@@ -155,12 +149,12 @@ img {
 }
 
 .accordion:hover {
-  background-color: rgb(249, 213, 230);
+  background-color: rgb(240, 252, 236);
   color: #444;
 }
 
 .active, .accordion.active {
-  background-color: rgb(168, 18, 108);
+  background-color: rgb(46, 129, 38);
   color: rgb(255, 252, 240);
 }
 
@@ -180,7 +174,7 @@ img {
 
 .panel {
   padding: 0 18px;
-  background-color: rgb(252, 236, 245);
+  background-color: rgb(240, 252, 236);
   display: none;
   overflow: hidden;
 }
@@ -289,22 +283,22 @@ img {
 }
 
 .main-button:hover {
-  background-color: rgb(168, 18, 108);
+  background-color: rgb(46, 129, 38);
   border: none;
   color: rgb(255, 252, 240);
 }
 
 .sub-button {
   background-color: rgb(255, 252, 240);
-  border-color: rgb(168, 18, 108);
+  border-color: rgb(46, 129, 38);
   border-style: solid;
-  color: rgb(168, 18, 108);
+  color: rgb(46, 129, 38);
   padding: 15px 32px;
   display: inline-block;
 }
 
 .sub-button:hover {
-  background-color: rgb(168, 18, 108);
+  background-color: rgb(46, 129, 38);
   color: rgb(255, 252, 240);
 }
 
@@ -312,7 +306,7 @@ img {
 @media screen and (max-width: 1160px) {
   .content-container {
     background-size: cover;
-    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.3)), url(../assets/lily.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(255, 255, 255, 1)), url(../assets/info.jpg);
   }
 }
 
